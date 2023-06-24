@@ -53,7 +53,7 @@ async fn main() -> std::io::Result<()> {
         .service(save_image)
         .service(load_image)
     })
-    .bind(("127.0.0.1", 7878))?
+    .bind(("0.0.0.0", 7878))?
     .run()
     .await
 }
